@@ -13,15 +13,33 @@
     <title>Authentification</title>
   </head>
   <body>
+    <div class="modal">
+      <div class="modal__inner">
+        <img class="modal__close" src="./img/close-modal.svg" alt="close" />
+        <p class="modal__text">
+          Очень жаль, Email или пароль введены неверно :(
+        </p>
+      </div>
+    </div>
     <header class="header">
       <div class="header__inner">
-        <button class="header__btn">
+        <button class="header__btn header__btn_login">
           <img class="header__icon" src="./img/login.svg" alt="icon" />Войти
+        </button>
+        <button class="header__btn header__btn_logout">
+          Выйти<img class="header__icon" src="./img/logout.svg" alt="icon" />
         </button>
       </div>
     </header>
     <div class="container">
       <form class="form-auth" action="#" method="post">
+        <button class="form-auth__close">
+          <img
+            class="form-auth__close-icon"
+            src="./img/close.svg"
+            alt="close"
+          />
+        </button>
         <h1 class="form-auth__title">Добро пожаловать!</h1>
         <div class="form-auth__item">
           <input
@@ -43,7 +61,7 @@
             maxlength="12"
           />
         </div>
-        <div class="form-auth__item">
+        <div class="form-auth__item form-auth__item_chek">
           <div class="form-auth__chek">
             <input
               class="form-auth__input"
@@ -55,7 +73,7 @@
               >Запомнить меня</label
             >
           </div>
-          <a class="form-auth__link" href="mailto:">Забыли пароль?</a>
+          <a class="form-auth__link" href="#">Забыли пароль?</a>
         </div>
         <div class="form-auth__item">
           <input
