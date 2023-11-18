@@ -136,6 +136,11 @@ a {
 
 .form-auth__input:invalid {
   border: 1px solid rgb(224, 103, 103);
+  background-color: rgba(224, 103, 103, 0.103);
+}
+
+.form-auth__input:invalid::placeholder {
+  color: rgb(224, 103, 103);
 }
 
 .form-auth__input:hover {
@@ -208,7 +213,7 @@ a {
 }
 
 #send:hover {
-  background: linear-gradient(45deg, rgb(206, 182, 236), rgb(67, 53, 80));;
+  background: rgb(67, 53, 80);
 }
 
 @media screen and (max-width: 760px) {

@@ -25,24 +25,22 @@
         <h1 class="form-auth__title">Добро пожаловать!</h1>
         <div class="form-auth__item">
           <input
-            class="form-auth__input"
+            class="form-auth__input form-auth__input_validate"
             type="email"
             name="email"
             id="email"
             placeholder="ваш email"
-            required
           />
         </div>
         <div class="form-auth__item">
           <input
-            class="form-auth__input"
+            class="form-auth__input form-auth__input_validate"
             type="password"
             name="password"
             id="password"
             placeholder="введите пароль"
             minlength="8"
             maxlength="12"
-            required
           />
         </div>
         <div class="form-auth__item">
@@ -60,7 +58,12 @@
           <a class="form-auth__link" href="mailto:">Забыли пароль?</a>
         </div>
         <div class="form-auth__item">
-          <input class="form-auth__input" type="submit" value="Войти" id="send" />
+          <input
+            class="form-auth__input"
+            type="submit"
+            value="Войти"
+            id="send"
+          />
         </div>
       </form>
     </div>
