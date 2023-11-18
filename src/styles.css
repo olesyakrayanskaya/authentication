@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 20px;
+}
+
+:active,
+:hover,
+:focus {
+  outline: none;
+}
+
+button,
+select,
+input {
+  cursor: pointer;
+}
