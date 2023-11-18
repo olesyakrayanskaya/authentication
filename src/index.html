@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -14,32 +14,55 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <button class="header__btn"><img class="header icon" src="./img/login.svg" alt="icon">Войти</button>
+      <div class="header__inner">
+        <button class="header__btn">
+          <img class="header__icon" src="./img/login.svg" alt="icon" />Войти
+        </button>
       </div>
     </header>
     <div class="container">
-        <header class="header">
-            <button class="header__btn" type="button">Войти</button>
-        </header>
-        <form class="form-auth" action="#" method="post">
-            <div class="form-auth__item">
-                <label class="form-auth__label" for="email">Ваш email</label>
-                <input class="form-auth__input" type="email" name="email" id="email">
-            </div>
-            <div class="form-auth__item">
-                <label class="form-auth__label" for="password">Ведите пароль</label>
-                <input class="form-auth__input" type="password" name="password" id="password">
-            </div>
-            <div class="form-auth__item">
-              <input class="form-auth__input" type="checkbox" name="remember" id="remember">
-              <label class="form-auth__label" for="remember">Запомнить меня</label>
-              <a class="form-auth__link" href="mailto:">Забыли пароль?</a>
+      <form class="form-auth" action="#" method="post">
+        <h1 class="form-auth__title">Добро пожаловать!</h1>
+        <div class="form-auth__item">
+          <input
+            class="form-auth__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ваш email"
+            required
+          />
+        </div>
+        <div class="form-auth__item">
+          <input
+            class="form-auth__input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="введите пароль"
+            minlength="8"
+            maxlength="12"
+            required
+          />
+        </div>
+        <div class="form-auth__item">
+          <div class="form-auth__chek">
+            <input
+              class="form-auth__input"
+              type="checkbox"
+              name="remember"
+              id="remember"
+            />
+            <label class="form-auth__label" for="remember"
+              >Запомнить меня</label
+            >
           </div>
-            <div class="form-auth__item">
-                <input class="form-auth__input" type="submit" value="Отправить">
-            </div>
-        </form>
+          <a class="form-auth__link" href="mailto:">Забыли пароль?</a>
+        </div>
+        <div class="form-auth__item">
+          <input class="form-auth__input" type="submit" value="Войти" id="send" />
+        </div>
+      </form>
     </div>
     <script src="./index.js"></script>
   </body>
